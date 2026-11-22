@@ -20,7 +20,6 @@ def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
     #         to_add.append(a[j][i])
 
     #     transposed.append(to_add)
-    transposed = [list(elements) for elements in zip(*a)]
 
-    return transposed
+    return [list(elements) for elements in zip(*a)]
             
